@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vakuutustarjous</title>
+</head>
+<body>
+
+    <header class="header_container">
+        <h1 class="section_header">Kilpailuta vakuutukset <span style="color: #3d5cb8;">helposti</span></h1>
+    </header> 
+
+    <div class="container">
+
+        <!-- Ensimmäinen näyttö: Vakuutukset -->
+        <div class="screen active" id="vakuutukset-screen">
+            <h3>Mitä haluaisit vakuuttaa?</h3><br>
+
+            <div id="autovakuutus-container">
+                <input type="checkbox" id="autovakuutus">
+                <label for="autovakuutus">Ajoneuvo</label>
+            </div>
+            
+
+            <div id="kotivakuutus-container">
+                <input type="checkbox" id="kotivakuutus">
+                <label for="kotivakuutus">Koti</label>
+            </div>
+            
+
+            <div id="henkilovakuutus-container">
+                <input type="checkbox" id="henkilovakuutus">
+                <label for="henkilovakuutus">Henkilö</label>
+            </div>
+            
+
+            <div id="lemmikkivakuutus-container">
+                <input type="checkbox" id="lemmikkivakuutus">
+                <label for="lemmikkivakuutus">Lemmikki</label>
+            </div>
+            
+            <div class="next-button-div">
+               <button class="next-button">Jatka</button>
+            </div>
+        </div>
+
+        <!-- Toinen näyttö: Yhteystiedot -->
+        <form class="screen" id="yhteystiedot-screen">
+            <h3>Yhteystiedot</h3>
+            <div class="contact-form">
+                <input type="email" id="email" placeholder="sähköposti" required><br>
+                <input type="tel" id="tele" placeholder="puhelinnumero" required><br>
+                <div class="second-screen-buttons">
+                    <button type="button" class="prev-button">Edellinen</ion-icon></button>
+                    <button type="submit" id="submit" class="send">Lähetä</button>
+                </div>
+            </div>
+
+        </form>
+
+        <!-- Kolmas näyttö: Kiitos -->
+        <div class="screen">
+            <h2 style="color: var(--primary-color);">Kiitos yhteydenotosta!</h2><br>
+            <p>Olemme vastaanottaneet tiedot.<br>Julius soittaa sinulle seuraavan tunnin aikana!</p><br>
+            <div class="back-to-start-button-div">
+            <button class="back-to-start-button">Takaisin alkuun</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="sivut.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
